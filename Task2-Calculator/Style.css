@@ -1,0 +1,70 @@
+/* Set the background color of the entire page to blue */
+/* Full-page background with a gradient */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #b476b12b, hwb(22 37% 20%)); /* Gradient background */
+}
+
+/* Style for the calculator title */
+h1 {
+    color: #ff6666; /* Light green text color */
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px hsl(257, 65%, 19%); /* Darker shadow for depth */
+}
+
+/* Calculator container styling */
+.calculator {
+    width: 300px;
+    background-color: hsl(16, 58%, 79%); /* Red calculator background */
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    overflow: hidden;
+}
+
+/* Display area styling */
+.display {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Button grid styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+/* Individual button styling */
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #edecec;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #ff6666; /* Slightly lighter red */
+    transform: scale(1.05); /* Small scale effect */
+}
+
+/* Special button styling for the
